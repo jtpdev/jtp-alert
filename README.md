@@ -1,27 +1,91 @@
+
 # JtpAlert
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3.
 
-## Development server
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/bdf1956a2bf0447aad4fd96da6159c26)](https://www.codacy.com/app/jtpdev/ng-alert?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=jtpdev/ng-alert&amp;utm_campaign=Badge_Grade)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Install
 
-## Code scaffolding
+To install this, use:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+> npm install --save jtp-alert
 
-## Build
+## Use
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+To use in your project import it in your module like that:
 
-## Running unit tests
+    import { BrowserModule } from  '@angular/platform-browser';
+    
+    import { NgModule } from  '@angular/core';
+    
+      
+    
+    import { AlertModule } from  'jtp-alert';
+    
+          
+    
+    import { AppComponent } from  './app.component';
+    
+      
+      
+    
+    @NgModule({
+    
+    declarations: [
+    
+    AppComponent
+       
+    ],
+    
+    imports: [
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+    BrowserModule,
 
-## Running end-to-end tests
+    AlertModule
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+    ],
 
-## Further help
+    providers: [],    
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+    bootstrap: [AppComponent]
+
+    })
+
+    export  class  AppModule { }
+
+and use in your component:
+
+    <div style="text-align:center" (click)="show(alert)"></div>
+    <jtp-alert #alert [data]="data"></jtp-alert>
+
+and
+
+    export class AppComponent {
+      data = {
+        title: 'Test title',
+        message: 'Message for user',
+        type: 'success',
+        btns: [
+          {
+            name: 'OK',
+            function: () => {
+              console.log('Ok button works');
+            },
+            order: 1,
+            close: true,
+            main: true
+          },
+          {
+            name: 'Cancel',
+            close: false
+          }
+        ]
+      };
+
+      show(alert){
+        alert.show();
+      }
+
+    }
+And done!
