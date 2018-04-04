@@ -9,3 +9,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 To install this, use:
 
 > npm install --save jtp-alert
+
+## Use
+
+To use in your project import your module
