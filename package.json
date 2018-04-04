@@ -5,10 +5,11 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "transpile": "ngc",
+    "transpile": "ng",
+    "build-css": "node-sass",
     "package": "rollup -c",
     "minify": "uglifyjs dist/bundles/amazing.umd.js --screw-ie8 --compress --mangle --comments --output dist/bundles/amazing.umd.min.js",
-    "build": "npm run transpile && npm run package && npm run minify"
+    "build": "tsc"
   },
   "keywords": [
     "angular",
@@ -37,7 +38,6 @@
     "@angular/router": "^5.2.0",
     "core-js": "^2.4.1",
     "ionicons": "2.0.1",
-    "ngc-webpack": "^4.1.2",
     "rxjs": "^5.5.6",
     "zone.js": "^0.8.19"
   },
@@ -57,6 +57,8 @@
     "karma-coverage-istanbul-reporter": "^1.2.1",
     "karma-jasmine": "~1.1.0",
     "karma-jasmine-html-reporter": "^0.2.2",
+    "ngc-webpack": "^4.1.2",
+    "node-sass": "^4.8.3",
     "protractor": "~5.1.2",
     "rollup": "^0.57.1",
     "ts-node": "~4.1.0",
