@@ -2,26 +2,14 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3.
 
-## Development server
+[![Build Status](https://travis-ci.org/jtpdev/ng-alert.svg?branch=master)](https://travis-ci.org/jtpdev/ng-alert) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/bdf1956a2bf0447aad4fd96da6159c26)](https://www.codacy.com/app/jtpdev/ng-alert?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=jtpdev/ng-alert&amp;utm_campaign=Badge_Grade)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Install
 
-## Code scaffolding
+To install this, use:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+> npm install --save jtp-alert
 
-## Build
+## Use
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+To use in your project import your module
