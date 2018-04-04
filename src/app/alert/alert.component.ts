@@ -3,7 +3,7 @@ import { Component, OnInit, Input } from '@angular/core';
 @Component({
   selector: 'jtp-alert',
   templateUrl: './alert.component.html',
-  styleUrls: ['./alert.component.css', './ionicons/css/ionicons.css']
+  styleUrls: ['./alert.component.scss']
 })
 export class AlertComponent implements OnInit {
 

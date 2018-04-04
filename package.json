@@ -1,6 +1,6 @@
 {
   "name": "jtp-alert",
-  "version": "0.1.7",
+  "version": "0.2.2",
   "license": "MIT",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -29,8 +29,7 @@
   "bugs": {
     "url": "https://github.com/jtpdev/ng-alert/issues"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "peerDependencies": {
     "@angular/forms": "^5.2.0",
     "@angular/http": "^5.2.0",
@@ -44,7 +43,6 @@
     "ionicons": "2.0.1",
     "rxjs": "^5.5.6",
     "zone.js": "^0.8.19"
-    
   },
   "devDependencies": {
     "@angular/cli": "~1.7.3",
@@ -70,5 +68,14 @@
     "tslint": "~5.9.1",
     "typescript": "^2.5.3",
     "uglify-js": "^3.3.18"
+  },
+  "ngPackage": {
+    "lib": {
+      "entryFile": "index.ts",
+      "cssUrl": "inline",
+      "externals": {
+        "rxjs/operator/map": "Rx.Observable.prototype"
+      }
+    }
   }
 }
