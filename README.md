@@ -89,3 +89,7 @@ and
 
     }
 And done!
+
+## Special thanks
+
+Thanks for [hendrathings](https://stackoverflow.com/users/1458098/hendrathings) that helped me on [StackOverFlow](https://stackoverflow.com/users/4912838/jimmy-porto) and solve the problem ionicons's fonts not loading.

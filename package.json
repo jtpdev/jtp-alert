@@ -1,6 +1,6 @@
 {
   "name": "jtp-alert",
-  "version": "0.2.4",
+  "version": "0.2.6",
   "license": "MIT",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
