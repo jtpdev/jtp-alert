@@ -88,7 +88,12 @@ and
       }
 
     }
+
 And done!
+
+## Example
+
+You can see the example of the usage in the [example project](https://github.com/jtpdev/jtp-alert/tree/master/example).
 
 ## Special thanks
 
