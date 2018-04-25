@@ -21,6 +21,11 @@ $ionicons-font-path: "../../../node_modules/ionicons/fonts";
     padding: 10px;
 }
 
+#title-content {
+    display: inline-block;
+    font-size: 24px;
+}
+
 #content {
     background-color: white;
     border: 1px solid #03A9F4;
@@ -42,6 +47,26 @@ $ionicons-font-path: "../../../node_modules/ionicons/fonts";
     border: 1px solid #03A9F4;
     border-color: #03A9F4;
     margin-left: 5px; 
+    
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 2px;
 }
 
 .main-alert {
@@ -61,14 +86,16 @@ $ionicons-font-path: "../../../node_modules/ionicons/fonts";
 
 .show {
     opacity: 1;
-    top: 50%;
+    top: 40%;
 }
 
 .icon {
     display: inline-block;
     margin-right: 10px;
     width: 20px;
-    border: 1px solid #FFF;
+    border: 1px solid #fff;
     border-radius: 50px;
     text-align: center;
+    top: 0 !important;
+    vertical-align: text-bottom;
 }
