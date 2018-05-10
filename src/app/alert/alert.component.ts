@@ -16,7 +16,7 @@ export class AlertComponent implements OnInit {
     this.init();
   }
 
-  private init() {
+  init() {
     if (this.data) {
       if (this.data.type) {
         switch (this.data.type) {
