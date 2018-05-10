@@ -13,8 +13,11 @@ export class AlertComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    if (this.data) {
+    this.init();
+  }
 
+  private init() {
+    if (this.data) {
       if (this.data.type) {
         switch (this.data.type) {
           case 'success':
@@ -30,13 +33,14 @@ export class AlertComponent implements OnInit {
       }
       if (this.data.btns) {
         this.data.btns = this.data.btns.sort((b1, b2) => {
-          return (b1.order ? b1.order : 0) - (b2.order ? b2.order : 0)
+          return (b1.order ? b1.order : 0) - (b2.order ? b2.order : 0);
         });
       }
     }
   }
 
   show() {
+    this.init();
     this.shown = true;
   }
 
