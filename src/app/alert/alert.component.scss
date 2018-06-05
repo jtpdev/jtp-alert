@@ -1,6 +1,10 @@
 $ionicons-font-path: "../../../node_modules/ionicons/fonts";
 @import "../../../node_modules/ionicons/scss/ionicons.scss";
 
+$alert-color: #03A9F4;
+$success-color: #72BB53;
+$error-color: #FF3823;
+
 .alert {
     display: block;
     position: fixed;
@@ -16,9 +20,20 @@ $ionicons-font-path: "../../../node_modules/ionicons/fonts";
 }
 
 #title {
-    background-color: #03A9F4;
     color: white;
     padding: 10px;
+}
+
+.title-a {
+    background-color: $alert-color;
+}
+
+.title-s {
+    background-color: $success-color;
+}
+
+.title-e {
+    background-color: $error-color;
 }
 
 #title-content {
@@ -28,24 +43,44 @@ $ionicons-font-path: "../../../node_modules/ionicons/fonts";
 
 #content {
     background-color: white;
-    border: 1px solid #03A9F4;
     border-bottom: none;
     padding: 10px;
 }
 
+.content-a {
+    border: 1px solid $alert-color;
+}
+
+.content-s {
+    border: 1px solid $success-color;
+}
+
+.content-e {
+    border: 1px solid $error-color;
+}
+
 #footer {
     background-color: white;
-    border: 1px solid #03A9F4;
     border-top: none;
     padding: 10px;
     text-align: right;
 }
 
-.btn-alert {
-    color: #03A9F4;
+.footer-a {
+    border: 1px solid $alert-color;
+}
+
+.footer-s {
+    border: 1px solid $success-color;
+}
+
+.footer-e {
+    border: 1px solid $error-color;
+}
+
+.btn {
+    color: $alert-color;
     background-color: white;
-    border: 1px solid #03A9F4;
-    border-color: #03A9F4;
     margin-left: 5px; 
     
     display: inline-block;
@@ -69,19 +104,19 @@ $ionicons-font-path: "../../../node_modules/ionicons/fonts";
     border-radius: 2px;
 }
 
-.main-alert {
-    color: #fff;
-    background-color: #03A9F4;
+.btn-a {
+    border: 1px solid $alert-color;
+    border-color: $alert-color;
 }
 
-.main-success {
-    color: #fff;
-    background-color: #72BB53;
+.btn-s {
+    border: 1px solid $success-color;
+    border-color: $success-color;
 }
 
-.main-error {
-    color: #fff;
-    background-color: #FF3823;
+.btn-e {
+    border: 1px solid $error-color;
+    border-color: $error-color;
 }
 
 .show {
