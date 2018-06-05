@@ -1,8 +1,14 @@
 <div class="alert" [ngClass]="{ 'show': shown }">
-  <div id="title">
+  <div id="title" [ngClass]="
+  {
+    'title-a': data?.type == null || (data?.type != 'error' && data?.type != 'success'),
+    'title-e': data?.type == 'error',
+    'title-s': data?.type == 'success'
+  }
+  ">
     <div class="icon" [ngClass]="
     { 
-      'ion-alert': data?.type == null || data?.type == 'alert',
+      'ion-alert': data?.type == null || (data?.type != 'error' && data?.type != 'success'),
       'ion-close': data?.type == 'error',
       'ion-checkmark': data?.type == 'success'
     }
@@ -11,11 +17,29 @@
      {{ data?.title }}
    </div>
   </div>
-  <div id="content">
+  <div id="content" [ngClass]="
+  {
+    'content-a': data?.type == null || (data?.type != 'error' && data?.type != 'success'),
+    'content-e': data?.type == 'error',
+    'content-s': data?.type == 'success'
+  }
+  ">
     {{ data?.message }}
   </div>
-  <div id="footer">
-    <button class="btn-alert"
+  <div id="footer" [ngClass]="
+  {
+    'footer-a': data?.type == null || (data?.type != 'error' && data?.type != 'success'),
+    'footer-e': data?.type == 'error',
+    'footer-s': data?.type == 'success'
+  }
+  ">
+    <button class="btn" [ngClass]="
+    {
+      'btn-a': data?.type == null || (data?.type != 'error' && data?.type == 'success'),
+      'btn-e': data?.type == 'error',
+      'btn-s': data?.type == 'success'
+    }
+    "
       [ngStyle]="style(btn.main)"
       *ngFor="let btn of data?.btns"
       (click)="call(btn.function, btn.close)">
